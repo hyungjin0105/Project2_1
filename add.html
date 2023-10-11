@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script>
+        function validateForm() {
+            let level = document.forms["postForm"]["level"].value;
+            let word = document.forms["postForm"]["word"].value;
+            let meaning = document.forms["postForm"]["meaning"].value;
+            let date = document.forms["postForm"]["date"].value;
+
+            if (level === "" || word === "" || meaning === "" || date === "") {
+                alert("All fields must be filled out.");
+                return false;
+            } else {
+                alert("게시물이 추가됩니다");
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Add Post</h2>
+        <form name="postForm" onsubmit="return validateForm()">
+            <div class="mb-3">
+                <label for="level" class="form-label">Level</label>
+                <input type="text" class="form-control" id="level" name="level" required>
+            </div>
+            <div class="mb-3">
+                <label for="word" class="form-label">Word</label>
+                <input type="text" class="form-control" id="word" name="word" required>
+            </div>
+            <div class="mb-3">
+                <label for="meaning" class="form-label">Meaning</label>
+                <input type="text" class="form-control" id="meaning" name="meaning" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

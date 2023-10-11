@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         }
     </script>
 </head>
+
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -33,7 +35,7 @@
             <div id="top">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <img src="Assets/brand/bootstrap-logo.svg" class="bd-placeholder-img" id="img1">
+                        <img src="Assets/brand/Book.png" class="bd-placeholder-img" id="img1" width="50" height="50">
                     <span class="fs-4">My vocabulary</span>
                     </a>
         
@@ -45,125 +47,142 @@
                     </ul>
                 </header>
             </div>
-            
-            <div class="middle">
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <h4>Word List</h4>
-                    </a>
-        
-                    <select name="vocab" id="vocab">
-                        <option value="select">Select Level</option>
-                        <option value="level1">1</option>
-                        <option value="level2">2</option>
-                        <option value="level3">3</option>
-                    </select>
-                    <input type="text" id="search" name="search" placeholder="word"></input>
-                    <input type="text" id="search2" name="search2" placeholder="Search"></input>
-                    <input type="button" value="Add" id="add" onclick="Add()" />
-                </header>
-            </div>
-            <div class="rows1">
-                <div class="col-sm-4 themed-grid-col" id="num">#</div>
-                <div class="col-sm-4 themed-grid-col" id="level">Level</div>
-                <div class="col-sm-4 themed-grid-col" id="word">Word</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">Meaning</div>
-                <div class="col-sm-4 themed-grid-col" id="date">Date</div>
-                <div class="col-sm-4 themed-grid-col" id="menu">Menu</div>
-            </div>
-            <div class="rows2">
-                <div class="col-sm-4 themed-grid-col" id="num">10</div>
-                <div class="col-sm-4 themed-grid-col" id="level">***</div>
-                <div class="col-sm-4 themed-grid-col" id="word"><a href="https://clinquant-bunny-102843.netlify.app/add.html">superintendent</a></div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">관리자, 감독관</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-10-01</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows3">
-                <div class="col-sm-4 themed-grid-col" id="num">9</div>
-                <div class="col-sm-4 themed-grid-col" id="level">*</div>
-                <div class="col-sm-4 themed-grid-col" id="word">persistent</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">끊임없는, 계속되는</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-28</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows4">
-                <div class="col-sm-4 themed-grid-col" id="num">8</div>
-                <div class="col-sm-4 themed-grid-col" id="level">**</div>
-                <div class="col-sm-4 themed-grid-col" id="word">maintenance</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">유지보수</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-27</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows5">
-                <div class="col-sm-4 themed-grid-col" id="num">5</div>
-                <div class="col-sm-4 themed-grid-col" id="level">**</div>
-                <div class="col-sm-4 themed-grid-col" id="word">accuse</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">비난하다, 고소하다</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-26</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows6">
-                <div class="col-sm-4 themed-grid-col" id="num">4</div>
-                <div class="col-sm-4 themed-grid-col" id="level">***</div>
-                <div class="col-sm-4 themed-grid-col" id="word">electric</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">전기의, 전기를 생산하는</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-25</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows7">
-                <div class="col-sm-4 themed-grid-col" id="num">3</div>
-                <div class="col-sm-4 themed-grid-col" id="level">***</div>
-                <div class="col-sm-4 themed-grid-col" id="word">probationary</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">견습중의, 가채용의</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-24</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows8">
-                <div class="col-sm-4 themed-grid-col" id="num">2</div>
-                <div class="col-sm-4 themed-grid-col" id="level">*</div>
-                <div class="col-sm-4 themed-grid-col" id="word">indicate</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">나타내다, 보여주다</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-20</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
-            <div class="rows9">
-                <div class="col-sm-4 themed-grid-col" id="num">1</div>
-                <div class="col-sm-4 themed-grid-col" id="level">*</div>
-                <div class="col-sm-4 themed-grid-col" id="word">legitimate</div>
-                <div class="col-sm-4 themed-grid-col" id="meaning">합법적인, 적법한</div>
-                <div class="col-sm-4 themed-grid-col" id="date">2022-09-18</div>
-                <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-            </div>
+    <div class="middle">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <h4>Word List</h4>
+            </a>
 
-            <div class="next">
-                <button type="button" id="left"><<</button><button type="button" id="page1">1</button><button type="button" id="page2">2</button><button type="button" id="page3">3</button><button type="button" id="right">>></button>
-            </div>
+            <select name="vocab" id="vocab">
+                <option value="select">Select Level</option>
+                <option value="level1">1</option>
+                <option value="level2">2</option>
+                <option value="level3">3</option>
+            </select>
+            <input type="text" id="search" name="search" placeholder="word"></input>
+            <input type="text" id="search2" name="search2" placeholder="Search"></input>
+            <input type="button" value="Add" id="add" onclick="Add()" />
+        </header>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th id="num">#</th>
+                <th id="level">Level</th>
+                <th id="word">Word</th>
+                <th id="meaning">Meaning</th>
+                <th id="date">Date</th>
+                <th id="menu">Menu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>***</td>
+                <td><a href="https://clinquant-bunny-102843.netlify.app/add.html">superintendent</a></td>
+                <td>관리자, 감독관</td>
+                <td>2022-10-01</td>
+                <td>
+                    <button type="button" onclick="editFunction()">
+                        <img src="Assets/brand/pencil.png" alt="Edit" class="bd-placeholder-img" id="img2" width="25" height="25">
+                    </button>
+                    <button type="button" onclick="deleteFunction()">
+                        <img src="Assets/brand/garbage.png" alt="Delete" class="bd-placeholder-img" id="img3" width="25" height="25">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>*</td>
+                <td>persistent</td>
+                <td>끊임없는, 계속되는</td>
+                <td>2022-09-28</td>
+                <td>
+                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
+                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                </td>
+            </tr>
+            </tbody>
+    </table>
+    <div class="next text-center">
+        <button type="button" id="left" class="btn btn-primary mx-1"><<</button>
+        <button type="button" id="page1" class="btn btn-primary mx-1">1</button>
+        <button type="button" id="page2" class="btn btn-primary mx-1">2</button>
+        <button type="button" id="page3" class="btn btn-primary mx-1">3</button>
+        <button type="button" id="right" class="btn btn-primary mx-1">>></button>
+    </div>
 
-            <div class="footer">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                  <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                    </a>
-                    <span class="text-muted">© 2023 Company, Inc</span>
-                  </div>
-              
-                  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                  </ul>
-                </footer>
-              </div>
-        </div>
+    <div class="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="text-muted">© 2023 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+</div>
 </body>
 </html>
