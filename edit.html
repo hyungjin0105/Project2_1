@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Record</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="my.css" rel="stylesheet">
     <script>
         function validateForm() {
             const level = document.forms["editForm"]["level"].value;
             const word = document.forms["editForm"]["word"].value;
             const meaning = document.forms["editForm"]["meaning"].value;
-    
+
             if (level === "" || word === "" || meaning === "") {
                 alert("All fields are required!");
                 return false;
             }
-    
+
             const confirmation = confirm("게시물을 수정할까요?");
             if (confirmation) {
                 alert("The record has been edited.");
-                window.location.href = 'index.html';  
+                window.location.href = 'index.html';
                 return true;
             } else {
                 return false;
             }
         }
     </script>
-    
 </head>
-
 <body>
-    <div class="container">
-        <h2>Edit Record</h2>
-        <form name="editForm" onsubmit="return validateForm()">
-            <div class="mb-3">
-                <label for="level" class="form-label">Level</label>
-                <input type="text" class="form-control" id="level" name="level" required>
-            </div>
-            <div class="mb-3">
-                <label for="word" class="form-label">Word</label>
-                <input type="text" class="form-control" id="word" name="word" required>
-            </div>
-            <div class="mb-3">
-                <label for="meaning" class="form-label">Meaning</label>
-                <input type="text" class="form-control" id="meaning" name="meaning" required>
-            </div>
-            <button type="submit" class="btn btn-primary">수정</button>
-        </form>
-    </div>
-</body>
+    <h2>Edit Record</h2>
+    <form name="editForm" onsubmit="return validateForm()">
+        <label for="level">Level:</label><br>
+        <input type="text" id="level" name="level" value="1"><br><br>  
 
+        <label for="word">Word:</label><br>
+        <input type="text" id="word" name="word" value="persistent"><br><br>  
+        <label for="meaning">Meaning:</label><br>
+        <input type="text" id="meaning" name="meaning" value="끊임없는, 계속되는"><br><br> 
+
+        <input type="submit" value="수정">
+    </form> 
+</body>
 </html>
