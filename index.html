@@ -35,7 +35,7 @@
             <div id="top">
                 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                        <img src="Assets/brand/Book.png" class="bd-placeholder-img" id="img1" width="50" height="50">
+                        <img src="Assets/brand/Book.png" class="bd-placeholder-img img-fluid" id="img1" width="50" height="50">
                     <span class="fs-4">My vocabulary</span>
                     </a>
         
@@ -63,8 +63,8 @@
             <input type="text" id="search2" name="search2" placeholder="Search"></input>
             <input type="button" value="Add" id="add" onclick="Add()" />
         </header>
-    </div>
-    <table class="table">
+    <div class="table-responsive">
+        <table class="table">
         <thead>
             <tr>
                 <th id="num">#</th>
@@ -77,87 +77,156 @@
         </thead>
         <tbody>
             <tr>
-                <td>10</td>
+                <td>1</td>
+                <td>*</td>
+                <td><a href="view.html">amiable</a></td>
+                <td>친근한, 호감을 주는</td>
+                <td>2023-10-10</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>**</td>
+                <td><a href="view.html">benevolent</a></td>
+                <td>자비로운</td>
+                <td>2023-09-30</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
                 <td>***</td>
-                <td><a href="https://clinquant-bunny-102843.netlify.app/add.html">superintendent</a></td>
-                <td>관리자, 감독관</td>
-                <td>2022-10-01</td>
+                <td><a href="view.html">candid</a></td>
+                <td>솔직한</td>
+                <td>2023-09-20</td>
                 <td>
-                    <button type="button" onclick="editFunction()">
-                        <img src="Assets/brand/pencil.png" alt="Edit" class="bd-placeholder-img" id="img2" width="25" height="25">
-                    </button>
-                    <button type="button" onclick="deleteFunction()">
-                        <img src="Assets/brand/garbage.png" alt="Delete" class="bd-placeholder-img" id="img3" width="25" height="25">
-                    </button>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>*</td>
+                <td><a href="view.html">diligent</a></td>
+                <td>근면한</td>
+                <td>2023-08-15</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>****</td>
+                <td><a href="view.html">eloquent</a></td>
+                <td>능변한</td>
+                <td>2023-07-10</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>**</td>
+                <td><a href="view.html">fervent</a></td>
+                <td>열정적인</td>
+                <td>2023-06-05</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>*</td>
+                <td><a href="view.html">gracious</a></td>
+                <td>우아한</td>
+                <td>2023-05-01</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>***</td>
+                <td><a href="view.html">harmonious</a></td>
+                <td>조화로운</td>
+                <td>2023-04-25</td>
+                <td>
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
                 </td>
             </tr>
             <tr>
                 <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
+                <td>****</td>
+                <td><a href="view.html">ingenious</a></td>
+                <td>독창적인</td>
+                <td>2023-03-20</td>
                 <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
                 </td>
             </tr>
             <tr>
-                <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
+                <td>10</td>
+                <td>*****</td>
+                <td><a href="view.html">jubilant</a></td>
+                <td>기쁜, 환희에 찬</td>
+                <td>2023-02-15</td>
                 <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
+                    <a href="edit.html">
+                        <img src="Assets/brand/pencil.png" alt="Edit" id="img2" width="25" height="25">
+                    </a>
+                    <a href="#" onclick="if(confirm('게시물을 삭제할까요?')){alert('게시물이 삭제되었습니다.');}">
+                        <img src="Assets/brand/garbage.png" alt="Delete" id="img3" width="25" height="25">
+                    </a>
                 </td>
             </tr>
-            <tr>
-                <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
-                <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-                </td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
-                <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-                </td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
-                <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-                </td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>*</td>
-                <td>persistent</td>
-                <td>끊임없는, 계속되는</td>
-                <td>2022-09-28</td>
-                <td>
-                    <img src="/image/pencil.png" class="bd-placeholder-img" id="img2">
-                    <img src="/image/garbage.png" class="bd-placeholder-img" id="img3">
-                </td>
-            </tr>
-            </tbody>
+        </tbody>
     </table>
     <div class="next text-center">
         <button type="button" id="left" class="btn btn-primary mx-1"><<</button>

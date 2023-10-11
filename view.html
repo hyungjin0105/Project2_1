@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-header h2 {
+            margin: 0;
+        }
+    </style>
+    <script>
+        function confirmDelete() {
+            let confirmation = confirm("게시물을 삭제할까요?");
+            if (confirmation) {
+                alert("게시물이 삭제되었습니다.");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>View Post</h2>
+                <div>
+                    <img src="Assets/brand/pencil.png" alt="Edit" class="bd-placeholder-img" id="img2" width="25" height="25" style="cursor:pointer" onclick="window.location.href='edit.html'">
+                    <img src="Assets/brand/garbage.png" alt="Delete" class="bd-placeholder-img" id="img3" width="25" height="25" style="cursor:pointer" onclick="confirmDelete()">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="level" class="form-label">Level</label>
+                <input type="text" class="form-control" id="level" name="level" value="3" disabled>
+            </div>
+            
+            <div class="mb-3">
+                <label for="word" class="form-label">Word</label>
+                <input type="text" class="form-control" id="word" name="word" value="Superintendent" disabled>
+            </div>
+            
+            <div class="mb-3">
+                <label for="meaning" class="form-label">Meaning</label>
+                <input type="text" class="form-control" id="meaning" name="meaning" value="관리자, 감독관" disabled>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="date" value="2022-10-01" disabled>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="6" disabled>
+A superintendent is a person who oversees the management and maintenance of a building, grounds, or institution. In this context, it refers to someone who ensures that a place or organization is running smoothly, managing everything from maintenance to administrative tasks.
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
